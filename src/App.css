@@ -1,0 +1,9 @@
+.App {
+  text-align: center;
+}
+
+.logo-gradient {
+  background: linear-gradient(45deg, #bca38a, lightblue);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
