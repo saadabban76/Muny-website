@@ -2,10 +2,11 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
+import About from "./components/About";
 
 function App() {
   return (
-    <div className="bg-primary text-black">
+    <div className="bg-primarybg text-primarytxt">
       <BrowserRouter>
         <Navbar />
         <Routes>
@@ -14,7 +15,7 @@ function App() {
             element={
               <>
                 <Hero />
-                <h5>hi</h5>
+                <About />
               </>
             }
           />
