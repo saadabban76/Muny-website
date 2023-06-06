@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import logo from "../assets/images/logo.png";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import { IoMdClose } from "react-icons/io";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
@@ -28,16 +29,50 @@ const Navbar = () => {
                text-gray-300 sm:text-xl 
           lg:space-x-8"
             >
-              <h2 className="text-white">Home</h2>
-              <h2 className="cursor-pointer transition-all ease-linear hover:text-white">
-                what tf is Muny ?
-              </h2>
-              <h2 className="cursor-pointer transition-all ease-linear hover:text-white">
-                how to buy
-              </h2>
-              <h2 className="cursor-pointer transition-all ease-linear hover:text-white">
-                Roadmap
-              </h2>
+              <Link
+                to="hero"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
+              >
+                <h2 className="cursor-pointer transition-all ease-linear hover:text-white">
+                  Home
+                </h2>
+              </Link>
+              <Link
+                to="about"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={700}
+              >
+                <h2 className="cursor-pointer transition-all ease-linear hover:text-white">
+                  what tf is Muny ?
+                </h2>
+              </Link>
+              <Link
+                to="howtobuy"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={700}
+              >
+                <h2 className="cursor-pointer transition-all ease-linear hover:text-white">
+                  how to buy
+                </h2>
+              </Link>
+              <Link
+                to="roadmap"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={700}
+              >
+                <h2 className="cursor-pointer transition-all ease-linear hover:text-white">
+                  Roadmap
+                </h2>
+              </Link>
             </div>
 
             {/* right */}
