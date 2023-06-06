@@ -1,5 +1,5 @@
 import React from "react";
-import mememan from "../assets/images/logo.png";
+import face from "../assets/images/panicman.png";
 
 const About = () => {
   return (
@@ -8,18 +8,20 @@ const About = () => {
     p-10"
     >
       {/* container */}
-      <div className="flex flex-col items-center justify-between sm:flex-row">
+      <div className="flex flex-col-reverse items-center justify-between sm:flex-row">
         {/* image */}
         <div>
           <img
-            className="h-[230px] w-[220px] sm:h-[270px] sm:w-[270px]"
-            src={mememan}
+            className="mt-12 h-[230px] w-[220px] sm:mt-0 sm:h-[270px] sm:w-[270px]"
+            src={face}
             alt="mememan"
           />
         </div>
         {/* about details */}
-        <div className="flex w-[50%] flex-col gap-6">
-          <h1 className="text-center text-3xl font-bold sm:text-5xl">About</h1>
+        <div className="flex flex-col gap-10 sm:w-[50%]">
+          <h1 className="text-4xl font-bold sm:text-center sm:text-5xl">
+            About
+          </h1>
           <div className="flex flex-col space-y-4 text-lg">
             <p>
               Muny is tired of watching everyone play hot potato with the

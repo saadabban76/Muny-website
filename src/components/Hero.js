@@ -12,22 +12,22 @@ const Hero = () => {
          border-b border-gray-700 opacity-100 sm:h-[700px]"
       >
         <img
-          className="-z-28 absolute h-full w-full object-contain 
+          className="-z-28 absolute h-full w-full object-left 
           sm:object-center"
           src={herobg}
           alt="bg"
         />
         <article
-          className="relative z-10 p-20
+          className="relative z-10 px-10 py-20 sm:p-20
       "
         >
-          <div className="ml-20 flex w-[45%] flex-col gap-8 pt-36">
+          <div className="flex w-[55%] flex-col gap-8 pt-20 transition-all ease-linear sm:ml-20 sm:w-[45%] sm:pt-36">
             {/* coin name */}
-            <h2 className="text-center text-3xl font-bold text-gray-200 sm:text-left sm:text-5xl">
+            <h2 className="text-left text-3xl font-bold text-gray-200 sm:text-5xl">
               $MUNY
             </h2>
             {/* paragraph */}
-            <p className="mt-6 text-center text-lg font-semibold text-[#40d354] sm:mt-0 sm:text-left sm:text-xl">
+            <p className="text-md break-keep text-left font-semibold text-[#40d354] sm:mt-0 sm:text-xl">
               the most memeable memecoin in existence. The dogs and frogs have
               had their day, it’s time for MUNY to rule to MemeSeason.
             </p>
@@ -35,21 +35,21 @@ const Hero = () => {
             <div className="flex space-x-4">
               {/* discord button */}
               <div
-                className={`text-md flex cursor-pointer items-center 
-                  space-x-2 rounded-md bg-[#5865F2] p-2 px-4 text-white
-                  transition-all ease-linear hover:scale-110 hover:shadow-lg sm:text-lg`}
+                className={`text-md flex cursor-pointer items-center space-x-2 
+                  rounded-full bg-[#5865F2] p-3 text-white transition-all ease-linear hover:scale-110
+                  hover:shadow-lg sm:rounded-md sm:p-2 sm:px-4 sm:text-lg`}
               >
                 <BsDiscord />
-                <p className="">Join Discord</p>
+                <p className="hidden sm:inline-flex">Join Discord</p>
               </div>
               {/* Telegram button */}
               <div
                 className={`text-md flex cursor-pointer items-center 
-                  space-x-2 rounded-md bg-[#30A3E6] p-2 px-4 text-white
-         transition-all ease-linear hover:scale-110 hover:shadow-lg sm:text-lg`}
+                  space-x-2 rounded-full bg-[#30A3E6] p-3 text-white transition-all ease-linear hover:scale-110
+         hover:shadow-lg sm:rounded-md sm:p-2 sm:px-4 sm:text-lg`}
               >
                 <FaTelegramPlane />
-                <p className="">Join Telegram</p>
+                <p className="hidden sm:inline-flex">Join Telegram</p>
               </div>
             </div>
           </div>
